@@ -1,0 +1,32 @@
+{
+  "name": "simpleSlide.js",
+  "title": "simpleSlide",
+  "description": "Small 318 bytes jQuery Plugin for create slides.",
+  "keywords": [
+    "interface",
+	"ui",
+    "slides",
+    "content",
+    "layout",
+	"animate",
+	"fade",
+	"transitions"
+    ],
+  "version": "1.0.0",
+  "author": {
+    "name": "Masquerade Circus",
+    "url": "http://masquerade-circus.creaken.com"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }, {
+    "type": "GPLv2",
+    "url": "http://opensource.org/licenses/GPL-2.0"
+  }],
+  "homepage": "https://github.com/Masquerade-Circus/simpleSlide.js",
+  "demo": "http://masquerade-circus.creaken.com/Plugins/simpleSlide/",
+  "dependencies": {
+    "jquery": ">=1.4.x"
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<style>
+			body,div,ul,li, img, a {margin:0; padding:0; outline: 0; text-decoration: none;}
+			a{color: cornflowerblue;}
+			a:hover{color: cadetblue;}
+			a.download{text-decoration:underline;}
+			html,body{height: 100%;}
+			body{font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; margin: 0 auto; padding: 2%;}
+			.description{font-size: 1.4em; display: block; text-align: center;}
+			.tc{text-align: center}
+			.texto{padding: 10px;margin-bottom: 5px;}
+			.gray{color: #666;font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;}
+			.container{border: 1em; padding: 2em; margin: 2em; text-align: center;}
+			.btn{width: 30%; margin: 0 0 0 20px; padding: 0.5em 2.5em; display: inline-block; background: #ccc; cursor:pointer;}
+			.btn:hover{background: green; color: #fff}
+			.code{background: #0A0704; color: #ccc; padding: 1em; margin: 1em 2em;font-family: Monaco, Consolas, "Lucida Console", monospace;}
+			img{width: 100%; height: auto;}
+			.button{margin: 0.5em; padding: 0.5em 1.5em; background: #ccc; color: #000; float: left; cursor: pointer;}
+			.button:hover{background: #000; color: #ccc}
+			.active{background: green; color: #fff}
+			.reset:hover{background: red; color: #fff;}
+			.github{position: absolute; top:0; right: 0; display:block;}
+			.legal{position: fixed; bottom:0; right: 0; background: #fff; padding: 0.2em 1.5em; box-shadow: 0 0 0.3em; text-align: right;}
+						
+			.banner {position: relative;text-align: center;margin-top: 50px;overflow: hidden;padding: 0 0 50%; clear: both;}
+			img{width: 100%; height: auto}
+			.thumbs {overflow: hidden; text-align: center;}
+			.thumbs a{display: inline-block;padding: 15px;background: #eee; color: green; max-width: 80px;}
+			.next, .prev{display: block; width: 150px; background: #eee; color: green; padding: 26px 0; text-align: center;}
+			.next:hover, .prev:hover, .thumbs a:hover{background: green; color: #fff}
+			.next {float: right;}
+			.prev{float: left;}
+			.thumbs a.currentSlide{background: #000; color: #fff;}
+			.banner img{width: 50%}
+			.banner div{width: 100%}
+		 </style>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="simpleSlide.ext.js"></script>
+		 <script type="text/javascript">
+                $(function(){
+						 var s = $('.banner').simpleSlide({time: 600, delay: 6000, nav: '.thumbs', thumbs: true});
+						 
+						 $('.prev').on('click', function(){s.go('p'); return false;});
+						 $('.next').on('click', function(){s.go('n'); return false;});
+                });
+		</script>
+	</head>
+<body>
+				<a href="http://github.com/Masquerade-Circus/simpleSlide.js" title="Fork me on Github" class="github" target="_blank"><img src="github.png" alt="Github" width="149" height="149"></a>
+				<h1 class="tc"><b>simpleSlide</b></h1>
+				<b class="description">
+					Small 318 bytes jQuery Plugin for create slides.
+					<br><a href="simpleSlideLite.html" title="simpleSlideLite">Lite</a> (438 bytes) and <a href="simpleSlideExt.html" title="simpleSlideExt">Extended</a> (830 bytes) version adds more options. 
+					<br><br><a href="https://github.com/Masquerade-Circus/simpleSlide.js/archive/master.zip" title="Download" class="download" target="_blank">Download</a>
+				</b>
+				
+				<br><br><h2>How to use: </h2>
+				Call the plugin on the parent of elements to make them a slide. 
+				
+				<br><br><h2>Options: </h2>
+				<div class="code">
+					$(selector).simpleSlide(options);
+					<br><br>$('elem').simpleSlide(object);
+				</div>
+				Defaults to 5000 miliseconds delay.
+				
+				<br><br>This version offers a function to force a transition and the option to change the transition speed, delay, and add a node to make a nav bar.
+				<br>This is the code of the example on this page, showing how to add "prev/next" buttons and a thumb nav.
+				<div class="code">
+					var s = $('.banner').simpleSlide({time: 600, delay: 6000, nav: '.thumbs', thumbs: true});
+					<br>
+					<br>$('.prev').on('click', function(){s.go('p'); return false;});
+					<br>$('.next').on('click', function(){s.go('n'); return false;});
+				</div>
+				
+				<br><br><h2>Example: </h2>
+				<a href="#" class="prev">Prev</a>
+				<a href="#" class="next">Next</a>
+				<div class="thumbs"></div>
+				<div class="banner">
+					<div><img src="http://lorempixel.com/400/400/people" ></div>
+					<div><img src="http://lorempixel.com/400/400/abstract" ></div>
+					<div><img src="http://lorempixel.com/400/400/city"></div>
+					<div><img src="http://lorempixel.com/400/400/animals" ></div>
+					<div><img src="http://lorempixel.com/400/400/business"></div>
+					<div><img src="http://lorempixel.com/400/400/nightlife"></div>
+					<div><img src="http://lorempixel.com/400/400/fashion"></div>
+				</div>
+				
+				<br><br><h2>Legal: </h2>
+				Author & copyright (c) 2013: <a href="http://masquerade-circus.creaken.com" title="Masquerade Circus" target="_blank">Masquerade Circus</a>
+				<br>Dual <a href="http://opensource.org/licenses/MIT" title="MIT" target="_blank">MIT</a> & <a href="http://opensource.org/licenses/GPL-2.0" title="GPLv2" target="_blank">GPLv2</a> license
+				<br><br><br><br>
+</body>
+</html>
