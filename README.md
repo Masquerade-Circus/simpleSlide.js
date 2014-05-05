@@ -1,4 +1,4 @@
-simpleAccordion.js
+simpleSlide.js
 =================
 
 Small 318 bytes jQuery Plugin for create slides.
