@@ -4,7 +4,7 @@ simpleSlide.js
 Small 318 bytes jQuery Plugin for create slides.
 
 ## Demo
-http://masquerade-circus.creaken.com/Plugins/simpleSlide/
+http://masquerade-circus.net/myPlugins/simpleSlide/
 
 ##How to use:
 Call the plugin on the parent of elements to make them a slide. 
@@ -23,5 +23,5 @@ Call the plugin on the parent of elements to make them a slide.
 ```
 
 # Legal
-Author & copyright (c) 2013: [Masquerade Circus](http://masquerade-circus.creaken.com)
+Author & copyright (c) 2013: [Masquerade Circus](http://masquerade-circus.net)
 Dual [MIT](http://opensource.org/licenses/MIT) & [GPLv2](http://opensource.org/licenses/GPL-2.0) license
